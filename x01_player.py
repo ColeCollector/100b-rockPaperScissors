@@ -14,6 +14,7 @@ rock
 
 Output: 0
 """
+import random
 
 def playerChoice():
   '''
@@ -24,6 +25,14 @@ def playerChoice():
   1: paper
   2: scissors
   '''
+  value = input("Enter your choice: \n")
+  if value == "rock" or value == "Rock":
+    value = 0
+  if value == "papper" or value == "paper" or value == "Papper" or value == "Paper":
+    value = 1
+  if value == "scissors" or value == "Scissors":
+    value = 2
+  
   return value
 
 

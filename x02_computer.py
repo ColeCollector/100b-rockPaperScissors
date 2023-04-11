@@ -8,14 +8,11 @@ output:
 1 : paper
 2 : scissors
 """
+import random
 
 def computerChoice():
-  
-  
-  
-  
+  value = random.randint(0,2)
   return value
-
 
 if __name__ == "__main__":
   computer = computerChoice()

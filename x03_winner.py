@@ -18,8 +18,30 @@ Output:
 '''
 
 def playerWins(computer,player):
+  if computer == player:
+    return 0
+
+  elif computer == 0:
+    if player == 1:
+      return 1
+    if player == 2:
+      return -1
+
+
+  elif computer == 1:
+    if player == 0:
+      return -1
+    if player == 2:
+      return 1
   
-  return 0
+  elif computer == 2:
+    if player == 0:
+      return 1
+    if player == 1:
+      return -1
+  
+  
+
 
 if __name__ == "__main__":
   assert playerWins(1,1) == 0
